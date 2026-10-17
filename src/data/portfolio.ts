@@ -10,7 +10,7 @@ export const profile = {
   name: "Walid Fernando Sastriana",
   degree: "S.Kom",
   logo: "/img/WFS-logo.png",
-  photo: "/img/profile.jpg",
+  photo: "/img/wisuda.jpg",
   emails: ["walid.sastriana@binus.ac.id", "walidfernando21@gmail.com"],
   primaryEmail: "walid.sastriana@binus.ac.id",
   /** TODO: complete your number, e.g. "+62 812-3456-7890" — the WhatsApp button activates automatically */
