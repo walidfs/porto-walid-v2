@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walid Fernando Sastriana — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Walid Fernando Sastriana, S.Kom — UI/UX Designer, Web Developer & Data Analyst based in Bogor, Indonesia."
+    />
+    <meta name="author" content="Walid Fernando Sastriana" />
+    <meta name="theme-color" content="#060b17" />
+
+    <!-- Open Graph / social share -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Walid Fernando Sastriana — Portfolio" />
+    <meta
+      property="og:description"
+      content="UI/UX Designer | Web Development | Data Analyst. Computer Science graduate (S.Kom) from Bina Nusantara University."
+    />
+    <meta property="og:url" content="https://walid-fernando-sastriana.vercel.app/" />
+    <meta property="og:image" content="https://walid-fernando-sastriana.vercel.app/img/profile.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply saved theme & language before first paint (prevents flash) -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("wfs-theme");
+          if (!theme) {
+            theme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+          }
+          if (theme === "dark") document.documentElement.classList.add("dark");
+          var lang = new URLSearchParams(window.location.search).get("lang") || localStorage.getItem("wfs-lang");
+          if (lang === "id" || lang === "en") document.documentElement.lang = lang;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>Please enable JavaScript to view this portfolio.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
