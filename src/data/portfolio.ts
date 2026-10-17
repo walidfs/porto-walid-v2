@@ -15,7 +15,8 @@ export const profile = {
   primaryEmail: "walid.sastriana@binus.ac.id",
   /** TODO: complete your number, e.g. "+62 812-3456-7890" — the WhatsApp button activates automatically */
   phone: "+62",
-  cvUrl: "https://drive.google.com/drive/folders/1SXhNqLfpVLrmgzmWGtGzDaLlMAKv6VJ9?usp=sharing",
+  cvUrl:
+    "https://drive.google.com/drive/folders/1SXhNqLfpVLrmgzmWGtGzDaLlMAKv6VJ9?usp=sharing",
   location: {
     en: "Bojong Gede, Bogor Regency, Indonesia.",
     id: "Bojong Gede, Kabupaten Bogor, Indonesia.",
@@ -33,7 +34,20 @@ export const roles: Localized<string[]> = {
 };
 
 /** Greetings that rotate in the hero (the first one follows the active language) */
-export const greetings = ["Hello", "Halo", "مرحباً", "Hola", "Bonjour", "Olá", "Konnichiwa", "Nǐ hǎo", "Hallo", "안녕하세요", "Namaste", "Привет"];
+export const greetings = [
+  "Hello",
+  "Halo",
+  "مرحباً",
+  "Hola",
+  "Bonjour",
+  "Olá",
+  "Konnichiwa",
+  "Nǐ hǎo",
+  "Hallo",
+  "안녕하세요",
+  "Namaste",
+  "Привет",
+];
 
 export const aboutParagraphs: Localized<string[]> = {
   en: [
@@ -52,8 +66,17 @@ export const aboutParagraphs: Localized<string[]> = {
   ],
 };
 
-export const quickFacts: { key: "degree" | "currently" | "studying" | "interests"; value: Localized }[] = [
-  { key: "degree", value: { en: "S.Kom — Computer Science, BINUS University", id: "S.Kom — Ilmu Komputer, Universitas Bina Nusantara" } },
+export const quickFacts: {
+  key: "degree" | "currently" | "studying" | "interests";
+  value: Localized;
+}[] = [
+  {
+    key: "degree",
+    value: {
+      en: "S.Kom — Computer Science, BINUS University",
+      id: "S.Kom — Ilmu Komputer, Universitas Bina Nusantara",
+    },
+  },
   {
     key: "currently",
     value: {
@@ -61,8 +84,20 @@ export const quickFacts: { key: "degree" | "currently" | "studying" | "interests
       id: "Staf Pengolah Data, Direktorat Jenderal Perhubungan Laut",
     },
   },
-  { key: "studying", value: { en: "Master of Administration (M.A), Institut STIAMI", id: "Magister Administrasi (M.A), Institut STIAMI" } },
-  { key: "interests", value: { en: "Technology, Data, UI/UX & Photography", id: "Teknologi, Data, UI/UX & Fotografi" } },
+  {
+    key: "studying",
+    value: {
+      en: "Master of Administration (M.A), Institut STIAMI",
+      id: "Magister Administrasi (M.A), Institut STIAMI",
+    },
+  },
+  {
+    key: "interests",
+    value: {
+      en: "Technology, Data, UI/UX & Photography",
+      id: "Teknologi, Data, UI/UX & Fotografi",
+    },
+  },
 ];
 
 /* ----------------------------- Education ----------------------------- */
@@ -83,23 +118,38 @@ export const education: Education[] = [
     logo: "/img/global-insani-logo.png",
   },
   {
-    school: { en: "SMK Penerbangan Angkasa Bogor", id: "SMK Penerbangan Angkasa Bogor" },
+    school: {
+      en: "SMK Penerbangan Angkasa Bogor",
+      id: "SMK Penerbangan Angkasa Bogor",
+    },
     level: { en: "Vocational High School", id: "Sekolah Menengah Kejuruan" },
-    program: { en: "Airframe & Power Plant Engineering", id: "Teknik Airframe & Power Plant (Pesawat Udara)" },
+    program: {
+      en: "Airframe & Power Plant Engineering",
+      id: "Teknik Airframe & Power Plant (Pesawat Udara)",
+    },
     period: { en: "2018 – 2021", id: "2018 – 2021" },
     logo: "/img/smk-penerbangan-logo.png",
   },
   {
-    school: { en: "Bina Nusantara University", id: "Universitas Bina Nusantara" },
+    school: {
+      en: "Bina Nusantara University",
+      id: "Universitas Bina Nusantara",
+    },
     level: { en: "Bachelor's Degree (S1)", id: "Sarjana (S1)" },
-    program: { en: "School of Computer Science (S.Kom)", id: "School of Computer Science — Ilmu Komputer (S.Kom)" },
+    program: {
+      en: "School of Computer Science (S.Kom)",
+      id: "School of Computer Science — Ilmu Komputer (S.Kom)",
+    },
     period: { en: "2021 – 2025", id: "2021 – 2025" },
     logo: "/img/binus-logo.png",
   },
   {
     school: { en: "Institut STIAMI Jakarta", id: "Institut STIAMI Jakarta" },
     level: { en: "Master's Degree (S2)", id: "Magister (S2)" },
-    program: { en: "Master of Administration (M.A)", id: "Magister Administrasi (M.A)" },
+    program: {
+      en: "Master of Administration (M.A)",
+      id: "Magister Administrasi (M.A)",
+    },
     period: { en: "2026 – Present", id: "2026 – Sekarang" },
     logo: "/img/stiami.png",
     current: true,
@@ -117,17 +167,61 @@ const frontend: Localized = { en: "Frontend", id: "Frontend" };
 const backend: Localized = { en: "Backend", id: "Backend" };
 
 export const skills: Skill[] = [
-  { name: { en: "HTML", id: "HTML" }, icon: "/img/skills/html.png", category: frontend },
-  { name: { en: "CSS", id: "CSS" }, icon: "/img/skills/css.png", category: frontend },
-  { name: { en: "JavaScript", id: "JavaScript" }, icon: "/img/skills/js.png", category: frontend },
-  { name: { en: "Python", id: "Python" }, icon: "/img/skills/python.png", category: { en: "Data & AI", id: "Data & AI" } },
-  { name: { en: "PHP", id: "PHP" }, icon: "/img/skills/php.png", category: backend },
-  { name: { en: "React.js", id: "React.js" }, icon: "/img/skills/react.png", category: frontend },
-  { name: { en: "Ms Office", id: "Ms Office" }, icon: "/img/skills/office.png", category: { en: "Productivity", id: "Produktivitas" } },
-  { name: { en: "MySQL", id: "MySQL" }, icon: "/img/skills/mysql.png", category: { en: "Database", id: "Basis Data" } },
-  { name: { en: "Laravel", id: "Laravel" }, icon: "/img/skills/laravel.png", category: backend },
-  { name: { en: "Mechanical", id: "Mekanikal" }, icon: "/img/skills/mechanic.png", category: { en: "Engineering", id: "Teknik" } },
-  { name: { en: "Photography", id: "Fotografi" }, icon: "/img/skills/photograph.png", category: { en: "Creative", id: "Kreatif" } },
+  {
+    name: { en: "HTML", id: "HTML" },
+    icon: "/img/skills/html.png",
+    category: frontend,
+  },
+  {
+    name: { en: "CSS", id: "CSS" },
+    icon: "/img/skills/css.png",
+    category: frontend,
+  },
+  {
+    name: { en: "JavaScript", id: "JavaScript" },
+    icon: "/img/skills/js.png",
+    category: frontend,
+  },
+  {
+    name: { en: "Python", id: "Python" },
+    icon: "/img/skills/python.png",
+    category: { en: "Data & AI", id: "Data & AI" },
+  },
+  {
+    name: { en: "PHP", id: "PHP" },
+    icon: "/img/skills/php.png",
+    category: backend,
+  },
+  {
+    name: { en: "React.js", id: "React.js" },
+    icon: "/img/skills/react.png",
+    category: frontend,
+  },
+  {
+    name: { en: "Ms Office", id: "Ms Office" },
+    icon: "/img/skills/office.png",
+    category: { en: "Productivity", id: "Produktivitas" },
+  },
+  {
+    name: { en: "MySQL", id: "MySQL" },
+    icon: "/img/skills/mysql.png",
+    category: { en: "Database", id: "Basis Data" },
+  },
+  {
+    name: { en: "Laravel", id: "Laravel" },
+    icon: "/img/skills/laravel.png",
+    category: backend,
+  },
+  {
+    name: { en: "Mechanical", id: "Mekanikal" },
+    icon: "/img/skills/mechanic.png",
+    category: { en: "Engineering", id: "Teknik" },
+  },
+  {
+    name: { en: "Photography", id: "Fotografi" },
+    icon: "/img/skills/photograph.png",
+    category: { en: "Creative", id: "Kreatif" },
+  },
 ];
 
 /* ----------------------------- Experience ---------------------------- */
@@ -163,19 +257,36 @@ export const experiences: Experience[] = [
   },
   {
     role: { en: "Certified Internship", id: "Magang Bersertifikat" },
-    org: { en: "Bina Nusantara University — School of Computer Science", id: "Universitas Bina Nusantara — School of Computer Science" },
-    period: { en: "September 2024 – February 2025", id: "September 2024 – Februari 2025" },
+    org: {
+      en: "Bina Nusantara University — School of Computer Science",
+      id: "Universitas Bina Nusantara — School of Computer Science",
+    },
+    period: {
+      en: "September 2024 – February 2025",
+      id: "September 2024 – Februari 2025",
+    },
     type: { en: "Internship", id: "Magang" },
     logo: "/img/binus-logo.png",
     points: {
-      en: ["Working on a project with the School of Computer Science department."],
+      en: [
+        "Working on a project with the School of Computer Science department.",
+      ],
       id: ["Mengerjakan proyek bersama departemen School of Computer Science."],
     },
   },
   {
-    role: { en: "Enrichment Programs – Research Assistant", id: "Program Enrichment – Asisten Peneliti" },
-    org: { en: "Bina Nusantara University — School of Computer Science", id: "Universitas Bina Nusantara — School of Computer Science" },
-    period: { en: "February 2024 – July 2024", id: "Februari 2024 – Juli 2024" },
+    role: {
+      en: "Enrichment Programs – Research Assistant",
+      id: "Program Enrichment – Asisten Peneliti",
+    },
+    org: {
+      en: "Bina Nusantara University — School of Computer Science",
+      id: "Universitas Bina Nusantara — School of Computer Science",
+    },
+    period: {
+      en: "February 2024 – July 2024",
+      id: "Februari 2024 – Juli 2024",
+    },
     type: { en: "Research", id: "Riset" },
     logo: "/img/binus-logo.png",
     points: {
@@ -188,9 +299,18 @@ export const experiences: Experience[] = [
     },
   },
   {
-    role: { en: "Junior Aircraft Technician (Certified Internship)", id: "Teknisi Pesawat Junior (Magang Bersertifikat)" },
-    org: { en: "PT Garuda Maintenance Facility AeroAsia Tbk", id: "PT Garuda Maintenance Facility AeroAsia Tbk" },
-    period: { en: "January 2020 – March 2020", id: "Januari 2020 – Maret 2020" },
+    role: {
+      en: "Junior Aircraft Technician (Certified Internship)",
+      id: "Teknisi Pesawat Junior (Magang Bersertifikat)",
+    },
+    org: {
+      en: "PT Garuda Maintenance Facility AeroAsia Tbk",
+      id: "PT Garuda Maintenance Facility AeroAsia Tbk",
+    },
+    period: {
+      en: "January 2020 – March 2020",
+      id: "Januari 2020 – Maret 2020",
+    },
     type: { en: "Internship", id: "Magang" },
     logo: "/img/gmf.jpg",
     points: {
@@ -227,17 +347,65 @@ export interface Project {
   image: string;
 }
 
-const paper = (title: string): Localized => ({ en: `Title: “${title}”`, id: `Judul: “${title}”` });
-const binus: Localized = { en: "Bina Nusantara University", id: "Universitas Bina Nusantara" };
-const ieee: Localized = { en: "View on IEEE Xplore", id: "Lihat di IEEE Xplore" };
+const paper = (title: string): Localized => ({
+  en: `Title: “${title}”`,
+  id: `Judul: “${title}”`,
+});
+const binus: Localized = {
+  en: "Bina Nusantara University",
+  id: "Universitas Bina Nusantara",
+};
+const ieee: Localized = {
+  en: "View on IEEE Xplore",
+  id: "Lihat di IEEE Xplore",
+};
 const figma: Localized = { en: "Open in Figma", id: "Buka di Figma" };
 
 export const projects: Project[] = [
   {
+    id: "simonkin",
+    category: "design", // Anda bisa menggantinya menjadi "social" jika dirasa lebih cocok
+    title: { en: "SIMONKIN", id: "SIMONKIN" },
+    summary: {
+      en: "System Monitoring Kinerja Internal (SIMONKIN) is a web-based internal performance monitoring system designed for the Data Processing Work Team at the Secretariat of the Directorate General of Sea Transportation.",
+      id: "System Monitoring Kinerja Internal (SIMONKIN) adalah sistem pemantauan kinerja internal berbasis web yang dirancang untuk Tim Kerja Pengolahan Data di Sekretariat Direktorat Jenderal Perhubungan Laut.",
+    },
+    badge: { en: "Web App", id: "Aplikasi Web" },
+    period: { en: "2026", id: "2026" }, // Silakan sesuaikan tahunnya jika berbeda
+    location: {
+      en: "Directorate General of Sea Transportation",
+      id: "Direktorat Jenderal Perhubungan Laut",
+    },
+    role: { en: "Full-Stack Developer", id: "Full-Stack Developer" }, // Silakan sesuaikan peran Anda
+    tools: ["Flask", "Python", "HTML", "CSS"], // Berdasarkan screenshot folder Anda sebelumnya
+    details: {
+      en: [
+        "Developed a web-based system to monitor internal performance and manage employee tasks.",
+        "Implemented features for meeting schedules, employee dispositions, and performance reports with evidence.",
+        "Integrated a calendar system for events and reminders.",
+        "Tailored the system specifically for the Data Processing Work Team under the Organization and Administration Bureau.",
+      ],
+      id: [
+        "Mengembangkan sistem berbasis web untuk memantau kinerja internal dan mengelola tugas pegawai.",
+        "Mengimplementasikan fitur jadwal rapat, disposisi pegawai, serta laporan status kinerja beserta bukti.",
+        "Mengintegrasikan sistem kalender untuk event dan pengingat.",
+        "Menyesuaikan sistem secara khusus untuk Tim Kerja Pengolahan Data di bawah Bagian Organisasi dan Tata Laksana.",
+      ],
+    },
+    link: "https://tinyurl.com/SIMONKIN",
+    linkLabel: { en: "View Live App", id: "Lihat Aplikasi" },
+    image: "/img/simonkin.png", // Pastikan Anda menambahkan gambar logo/UI SIMONKIN ke folder public/img dengan nama ini
+  },
+  {
     id: "thesis-xray",
     category: "research",
-    title: { en: "Thesis Scientific Article (Scopus Indexed)", id: "Artikel Ilmiah Skripsi (Terindeks Scopus)" },
-    summary: paper("Late Fusion Approach for X-Ray Detection Using Frequency Domain Features DWT, SIFT, and LBP with SVM Model"),
+    title: {
+      en: "Thesis Scientific Article (Scopus Indexed)",
+      id: "Artikel Ilmiah Skripsi (Terindeks Scopus)",
+    },
+    summary: paper(
+      "Late Fusion Approach for X-Ray Detection Using Frequency Domain Features DWT, SIFT, and LBP with SVM Model",
+    ),
     badge: { en: "Scopus Indexed", id: "Terindeks Scopus" },
     period: { en: "April 2025 – August 2025", id: "April 2025 – Agustus 2025" },
     location: binus,
@@ -263,15 +431,20 @@ export const projects: Project[] = [
         "Membuktikan bahwa penggabungan fitur pada tahap akhir (late fusion) lebih unggul dibandingkan pendekatan fitur tunggal.",
       ],
     },
-    image: "/img/Thesis.jpg",
+    image: "/img/Thesis.png",
   },
   {
     id: "paper-meta-classifier",
     category: "research",
     title: { en: "Scientific Paper", id: "Makalah Ilmiah" },
-    summary: paper("Meta-Classifier Approach to Facial Expression Recognition Using DWT-Based Feature Extraction"),
+    summary: paper(
+      "Meta-Classifier Approach to Facial Expression Recognition Using DWT-Based Feature Extraction",
+    ),
     badge: { en: "IEEE Xplore", id: "IEEE Xplore" },
-    period: { en: "December 2024 – January 2025", id: "Desember 2024 – Januari 2025" },
+    period: {
+      en: "December 2024 – January 2025",
+      id: "Desember 2024 – Januari 2025",
+    },
     location: {
       en: "International Conference on Computer Sciences, Engineering, and Technology Innovation 2025 (ICOCSETI 2025)",
       id: "International Conference on Computer Sciences, Engineering, and Technology Innovation 2025 (ICOCSETI 2025)",
@@ -292,15 +465,20 @@ export const projects: Project[] = [
     },
     link: "https://ieeexplore.ieee.org/document/11020511",
     linkLabel: ieee,
-    image: "/img/MataClassifier.jpg",
+    image: "/img/MataClassifier.png",
   },
   {
     id: "paper-late-fusion-fer",
     category: "research",
     title: { en: "Scientific Paper", id: "Makalah Ilmiah" },
-    summary: paper("Late Fusion Approach for Facial Expression Recognition Using HOG, LBP, and DWT Features with SVM"),
+    summary: paper(
+      "Late Fusion Approach for Facial Expression Recognition Using HOG, LBP, and DWT Features with SVM",
+    ),
     badge: { en: "IEEE Xplore", id: "IEEE Xplore" },
-    period: { en: "October 2024 – December 2024", id: "Oktober 2024 – Desember 2024" },
+    period: {
+      en: "October 2024 – December 2024",
+      id: "Oktober 2024 – Desember 2024",
+    },
     location: {
       en: "Beyond Technology Summit on Informatics International Conference 2024 (BTS-I2C 2024)",
       id: "Beyond Technology Summit on Informatics International Conference 2024 (BTS-I2C 2024)",
@@ -321,7 +499,7 @@ export const projects: Project[] = [
     },
     link: "https://ieeexplore.ieee.org/document/10941791",
     linkLabel: ieee,
-    image: "/img/LateFusion.jpg",
+    image: "/img/LateFusion.png",
   },
   {
     id: "ticktake",
@@ -332,9 +510,15 @@ export const projects: Project[] = [
       id: "TickTake adalah platform pemesanan tiket konser yang membantu para penggemar konser menemukan dan membeli tiket konser favorit mereka dengan cepat, aman, dan mudah.",
     },
     badge: { en: "Web App", id: "Aplikasi Web" },
-    period: { en: "September 2023 – January 2024", id: "September 2023 – Januari 2024" },
+    period: {
+      en: "September 2023 – January 2024",
+      id: "September 2023 – Januari 2024",
+    },
     location: binus,
-    role: { en: "UI/UX Designer & Front-End Developer", id: "Desainer UI/UX & Front-End Developer" },
+    role: {
+      en: "UI/UX Designer & Front-End Developer",
+      id: "Desainer UI/UX & Front-End Developer",
+    },
     tools: ["Figma", "Laravel"],
     details: {
       en: [
@@ -350,7 +534,7 @@ export const projects: Project[] = [
     },
     link: "https://www.figma.com/design/4tJke98tWn5BAoINVAKT8y/WEB-PROGRAMMING?node-id=0-1&m=dev&t=vrIf9qzPYiAP0abk-1",
     linkLabel: figma,
-    image: "/img/ticktake.jpg",
+    image: "/img/ticktake.png",
   },
   {
     id: "pawpals",
@@ -361,22 +545,30 @@ export const projects: Project[] = [
       id: "PawPals adalah website petshop modern yang menyediakan makanan, aksesori, dan layanan premium seperti pet hotel, grooming, dan perawatan hewan dalam satu platform yang praktis.",
     },
     badge: { en: "UI/UX", id: "UI/UX" },
-    period: { en: "September 2023 – January 2024", id: "September 2023 – Januari 2024" },
+    period: {
+      en: "September 2023 – January 2024",
+      id: "September 2023 – Januari 2024",
+    },
     location: binus,
     role: { en: "UI/UX Designer", id: "Desainer UI/UX" },
     tools: ["Figma"],
     details: {
       en: ["Designed and developed interactive prototypes using Figma."],
-      id: ["Merancang dan mengembangkan prototipe interaktif menggunakan Figma."],
+      id: [
+        "Merancang dan mengembangkan prototipe interaktif menggunakan Figma.",
+      ],
     },
     link: "https://www.figma.com/design/kEluuLC68Jbz5SdYHnL1IG/PAWPALS?node-id=0-1&m=dev&t=fjqsWJCpPgC0SLFj-1",
     linkLabel: figma,
-    image: "/img/pawpals.jpg",
+    image: "/img/pawpals.png",
   },
   {
     id: "character-building",
     category: "social",
-    title: { en: "Character Building Religion Project", id: "Proyek Character Building Agama" },
+    title: {
+      en: "Character Building Religion Project",
+      id: "Proyek Character Building Agama",
+    },
     summary: {
       en: "A social project aimed at fostering tolerance among different religions through education and discussion in the school environment.",
       id: "Proyek sosial yang bertujuan menumbuhkan sikap toleransi antarumat beragama melalui edukasi dan diskusi di lingkungan sekolah.",
@@ -400,12 +592,16 @@ export const projects: Project[] = [
         "Menyusun laporan dokumentasi sebagai bahan evaluasi.",
       ],
     },
-    image: "/img/CBagama.jpg",
+    image: "/img/CBagama.png",
   },
 ];
 
 /* ---------------------------- Certificates --------------------------- */
-export type CertificateCategory = "competency" | "conference" | "training" | "seminar";
+export type CertificateCategory =
+  | "competency"
+  | "conference"
+  | "training"
+  | "seminar";
 
 export interface Certificate {
   id: string;
@@ -418,17 +614,23 @@ export interface Certificate {
 export const certificates: Certificate[] = [
   {
     id: "bnsp-digital-marketing",
-    title: { en: "BNSP Certificate of Competence – Digital Marketing & AI", id: "Sertifikat Kompetensi BNSP – Digital Marketing & AI" },
+    title: {
+      en: "BNSP Certificate of Competence – Digital Marketing & AI",
+      id: "Sertifikat Kompetensi BNSP – Digital Marketing & AI",
+    },
     issuer: "BNSP",
     category: "competency",
     image: "/img/certificates/BNSP-DIGITALMARKETING.jpg",
   },
   {
     id: "bnsp-office-admin",
-    title: { en: "BNSP Certificate of Competence – Office Administration", id: "Sertifikat Kompetensi BNSP – Administrasi Perkantoran" },
+    title: {
+      en: "BNSP Certificate of Competence – Office Administration",
+      id: "Sertifikat Kompetensi BNSP – Administrasi Perkantoran",
+    },
     issuer: "BNSP",
     category: "competency",
-    image: "/img/certificates/BNSP-ADM-PERKANTORAN.jpg",
+    image: "/img/certificates/BNSP-ADM PERKANTORAN.png",
   },
   {
     id: "icobar-2025",
@@ -438,7 +640,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "ICOBAR 2025",
     category: "conference",
-    image: "/img/certificates/Sertif-ICOBAR.jpg",
+    image: "/img/certificates/Sertif-ICOBAR.png",
   },
   {
     id: "it-bootcamp",
@@ -448,7 +650,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "IT Bootcamp",
     category: "training",
-    image: "/img/certificates/ITBootcamp.jpg",
+    image: "/img/certificates/ITBootcamp.png",
   },
   {
     id: "gmf-internship",
@@ -458,13 +660,16 @@ export const certificates: Certificate[] = [
     },
     issuer: "GMF AeroAsia",
     category: "training",
-    image: "/img/certificates/SKGMF.jpg",
+    image: "/img/certificates/SKGMF.png",
   },
   {
     id: "airframe-power-plant",
-    title: { en: "Certificate of Competency – Airframe & Power Plant", id: "Sertifikat Kompetensi – Airframe & Power Plant" },
+    title: {
+      en: "Certificate of Competency – Airframe & Power Plant",
+      id: "Sertifikat Kompetensi – Airframe & Power Plant",
+    },
     category: "competency",
-    image: "/img/certificates/airframe.jpg",
+    image: "/img/certificates/airframe.png",
   },
   {
     id: "basic-survival",
@@ -474,7 +679,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "Lanud Atang Sendjaja",
     category: "training",
-    image: "/img/certificates/basic-survival.jpg",
+    image: "/img/certificates/basic-survival.png",
   },
   {
     id: "icocseti-2025",
@@ -484,7 +689,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "ICOCSETI 2025",
     category: "conference",
-    image: "/img/certificates/icocseti-2025.jpg",
+    image: "/img/certificates/icocseti-2025.png",
   },
   {
     id: "bts-i2c-2024",
@@ -494,7 +699,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "BTS-I2C 2024",
     category: "conference",
-    image: "/img/certificates/BTS.jpg",
+    image: "/img/certificates/BTS.png",
   },
   {
     id: "data-science-ai",
@@ -504,7 +709,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "BINUS University",
     category: "training",
-    image: "/img/certificates/binus-data-science.jpg",
+    image: "/img/certificates/binus-data-science.png",
   },
   {
     id: "cimb-public-speaking",
@@ -514,7 +719,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "CIMB Niaga",
     category: "seminar",
-    image: "/img/certificates/cimb-public-speaking.jpg",
+    image: "/img/certificates/cimb-public-speaking.png",
   },
   {
     id: "bca-career",
@@ -524,7 +729,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "BCA",
     category: "seminar",
-    image: "/img/certificates/bca-career.jpg",
+    image: "/img/certificates/bca-career.png",
   },
   {
     id: "reddoorz-data",
@@ -534,7 +739,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "RedDoorz",
     category: "seminar",
-    image: "/img/certificates/reddoorz-data.jpg",
+    image: "/img/certificates/reddoorz-data.png",
   },
   {
     id: "dana-communication",
@@ -544,7 +749,7 @@ export const certificates: Certificate[] = [
     },
     issuer: "DANA",
     category: "seminar",
-    image: "/img/certificates/dana-communication.jpg",
+    image: "/img/certificates/dana-communication.png",
   },
 ];
 
@@ -562,7 +767,12 @@ export const activities: Activity[] = [
     id: "tilawah-2026",
     title: { en: "Tilawatil Qur'an", id: "Tilawatil Qur'an" },
     date: { en: "March 2026", id: "Maret 2026" },
-    images: ["/img/activities/DSC00890.jpg", "/img/activities/DSC00888.jpg", "/img/activities/DSC00848.jpg", "/img/activities/DSC00833.jpg"],
+    images: [
+      "/img/activities/DSC00890.jpg",
+      "/img/activities/DSC00888.jpg",
+      "/img/activities/DSC00848.jpg",
+      "/img/activities/DSC00833.jpg",
+    ],
     description: {
       en: "Performed Quran recitation during the 'Santunan Anak Yatim' and 'Buka Puasa Bersama' event organized by the Bagian Organisasi dan Tata Laksana, Secretariat of the Directorate General of Sea Transportation.",
       id: "Membawakan tilawah Al-Qur'an pada acara Santunan Anak Yatim dan Buka Puasa Bersama yang diselenggarakan oleh Bagian Organisasi dan Tata Laksana, Sekretariat Direktorat Jenderal Perhubungan Laut.",
@@ -570,9 +780,16 @@ export const activities: Activity[] = [
   },
   {
     id: "virtual-event-2026",
-    title: { en: "Virtual Event Technical Coordinator", id: "Koordinator Teknis Acara Virtual" },
+    title: {
+      en: "Virtual Event Technical Coordinator",
+      id: "Koordinator Teknis Acara Virtual",
+    },
     date: { en: "February 2026", id: "Februari 2026" },
-    images: ["/img/activities/op.jpg", "/img/activities/op2.jpg", "/img/activities/op3.jpg"],
+    images: [
+      "/img/activities/op.png",
+      "/img/activities/op2.png",
+      "/img/activities/op3.png",
+    ],
     description: {
       en: "Served as the lead Zoom Meeting Operator for a high-level National Health Seminar featuring the Spouse of the Vice Minister of Transportation. Managed live streaming, participant coordination, and technical troubleshooting to ensure a seamless virtual experience for the Ministry's executive leadership and Dharma Wanita Persatuan members.",
       id: "Bertugas sebagai operator utama Zoom Meeting pada Seminar Kesehatan Nasional tingkat tinggi yang menghadirkan Istri Wakil Menteri Perhubungan. Mengelola siaran langsung, koordinasi peserta, dan penanganan kendala teknis untuk memastikan pengalaman virtual yang lancar bagi jajaran pimpinan Kementerian dan anggota Dharma Wanita Persatuan.",
@@ -580,7 +797,10 @@ export const activities: Activity[] = [
   },
   {
     id: "stranas-pk-2025",
-    title: { en: "Socialization of Stranas PK Reporting", id: "Sosialisasi Pelaporan Stranas PK" },
+    title: {
+      en: "Socialization of Stranas PK Reporting",
+      id: "Sosialisasi Pelaporan Stranas PK",
+    },
     date: { en: "December 2025", id: "Desember 2025" },
     images: ["/img/activities/cilacap.jpeg"],
     description: {
@@ -600,7 +820,10 @@ export const activities: Activity[] = [
   },
   {
     id: "gmf-internship-2020",
-    title: { en: "Internship PT GMF AeroAsia Tbk.", id: "Magang di PT GMF AeroAsia Tbk." },
+    title: {
+      en: "Internship PT GMF AeroAsia Tbk.",
+      id: "Magang di PT GMF AeroAsia Tbk.",
+    },
     date: { en: "January 2020", id: "Januari 2020" },
     images: ["/img/MagangGmf.jpg"],
     description: {
@@ -611,5 +834,12 @@ export const activities: Activity[] = [
 ];
 
 /* ---------------------------- Navigation ----------------------------- */
-export const NAV_SECTIONS = ["about", "experience", "projects", "certificates", "activities", "contact"] as const;
+export const NAV_SECTIONS = [
+  "about",
+  "experience",
+  "projects",
+  "certificates",
+  "activities",
+  "contact",
+] as const;
 export type NavSection = (typeof NAV_SECTIONS)[number];
