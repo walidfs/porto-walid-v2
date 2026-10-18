@@ -779,6 +779,22 @@ export const activities: Activity[] = [
     },
   },
   {
+    id: "data standardization - 2026",
+    title: {
+      en: "Data Standard Validation for Transportation Data Dictionary",
+      id: "Validasi Standar Data Kamus Data Transportasi",
+    },
+    date: { en: "July 2026", id: "Juli 2026" },
+    images: [
+      "/img/activities/standardata2.png",
+      "/img/activities/standardata1.png",
+    ],
+    description: {
+      en: "Contributed to data standard validation activities for the formulation of the Transportation Data Dictionary as a foundation to strengthen the implementation of One Data Indonesia (Satu Data Indonesia), focusing on collaboration, standardization, and data quality for integrated data governance.",
+      id: "Berkontribusi dalam kegiatan validasi standar data untuk penyusunan Kamus Data Transportasi sebagai fondasi penguatan implementasi Satu Data Indonesia, berfokus pada kolaborasi, standardisasi, dan kualitas data untuk mewujudkan tata kelola data yang terintegrasi.",
+    },
+  },
+  {
     id: "virtual-event-2026",
     title: {
       en: "Virtual Event Technical Coordinator",
