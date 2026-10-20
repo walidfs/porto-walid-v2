@@ -400,15 +400,18 @@ export const projects: Project[] = [
     id: "thesis-xray",
     category: "research",
     title: {
-      en: "Thesis Scientific Article (Scopus Indexed)",
-      id: "Artikel Ilmiah Skripsi (Terindeks Scopus)",
+      en: "Thesis Scientific Article",
+      id: "Artikel Ilmiah Skripsi",
     },
     summary: paper(
       "Late Fusion Approach for X-Ray Detection Using Frequency Domain Features DWT, SIFT, and LBP with SVM Model",
     ),
     badge: { en: "Scopus Indexed", id: "Terindeks Scopus" },
     period: { en: "April 2025 – August 2025", id: "April 2025 – Agustus 2025" },
-    location: binus,
+    location: {
+      en: "International Conference on Biospheric Harmony (ICOBAR) 2025",
+      id: "International Conference on Biospheric Harmony (ICOBAR) 2025",
+    },
     role: { en: "Student", id: "Mahasiswa" },
     tools: ["Python"],
     details: {
@@ -436,11 +439,14 @@ export const projects: Project[] = [
   {
     id: "paper-meta-classifier",
     category: "research",
-    title: { en: "Scientific Paper", id: "Makalah Ilmiah" },
+    title: {
+      en: "Scientific Article",
+      id: "Artikel Ilmiah ",
+    },
     summary: paper(
       "Meta-Classifier Approach to Facial Expression Recognition Using DWT-Based Feature Extraction",
     ),
-    badge: { en: "IEEE Xplore", id: "IEEE Xplore" },
+    badge: { en: "Scopus Indexed", id: "Terindeks Scopus" },
     period: {
       en: "December 2024 – January 2025",
       id: "Desember 2024 – Januari 2025",
@@ -470,11 +476,14 @@ export const projects: Project[] = [
   {
     id: "paper-late-fusion-fer",
     category: "research",
-    title: { en: "Scientific Paper", id: "Makalah Ilmiah" },
+    title: {
+      en: "Scientific Article",
+      id: "Artikel Ilmiah ",
+    },
     summary: paper(
       "Late Fusion Approach for Facial Expression Recognition Using HOG, LBP, and DWT Features with SVM",
     ),
-    badge: { en: "IEEE Xplore", id: "IEEE Xplore" },
+    badge: { en: "Scopus Indexed", id: "Terindeks Scopus"  },
     period: {
       en: "October 2024 – December 2024",
       id: "Oktober 2024 – Desember 2024",
